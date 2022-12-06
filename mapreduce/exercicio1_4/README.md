@@ -1,26 +1,15 @@
 ## Exercicio 1.4
 
-Modifica o exercicio anterior para que o resultado da execución sexa o máximo absoluto de todas as vendas rexistradas.
+Modifica o exercicio anterior para que o resultado da execución sexa o máximo absoluto de todas as vendas rexistradas para cada tipo de pago en todo o ficheiro.
 
+Executa o traballo desde Hadoop sobre purchases.txt almacenado en HDFS.
 
 # RESULTADO
 
-Este é o resultado do máximo de ventas TOTALES:
+O resultado do total de ventas por método de pago é o seguinte
 
-Total :         57649212.14
-Total :         114913644.2
-Total :         57599085.89
-Total :         57463477.11
-Total :         114936685.36
-Total :         57481589.56
-Total :         57299046.64
-Total :         57410753.04
-Total :         57539833.11
-Total :         57491808.44
-Total :         57450757.91
-Total :         57624820.94
-Total :         57434448.97
-Total :         57513165.58
-Total :         57452374.13
-Total :         57197250.24
-
+Amex    206628366.77
+Visa    206703361.97
+MasterCard      207011524.35
+Cash    207245078.69
+Discover        206869621.48

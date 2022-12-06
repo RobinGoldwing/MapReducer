@@ -1,8 +1,8 @@
 #!/usr/bin/python
 
 import sys
-
-MaxPayment = {}
+#
+salesTotal = 0
 
 # Loop around the data
 # It will be in the format key\tval
@@ -16,11 +16,9 @@ for line in sys.stdin:
     if len(data_mapped) != 2:
         # Something has gone wrong. Skip this line.
         continue
-    thisKey, thisSale = data_mapped
-    if thisKey not in MaxPayment.keys():
-        MaxPayment[thisKey] = float(thisSale)
-    else:
-        MaxPayment[thisKey] += float(thisSale)
 
-for key, value in MaxPayment.items():
-    print(key + "\t" + str(value))
+    thisKey, thisSale = data_mapped
+    salesTotal += float(thisSale)
+
+# Escribe o ultimo par, unha vez re
+print("Total : "+"\t"+str(salesTotal))
