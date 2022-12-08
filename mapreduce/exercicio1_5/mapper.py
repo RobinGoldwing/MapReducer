@@ -12,6 +12,6 @@ for line in sys.stdin:
     try:
         data = line.strip().split("\t")
         date, time, store, item, cost, payment = data
-        print(item+"\t"+cost)
+        print("Total"+"\t"+cost)
     except ValueError:
 	pass
